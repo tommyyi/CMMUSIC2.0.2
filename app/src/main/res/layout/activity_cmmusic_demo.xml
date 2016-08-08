@@ -1,0 +1,468 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".CMMusicDemo" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/initButton"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="初始化" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="短信验证码登录" />
+
+                <Button
+                    android:id="@+id/smsAuthLoginValidate"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="短信登录验证" />
+            </LinearLayout>
+
+            <!--
+            LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/loginOrder"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="登录" />
+
+                <Button
+                    android:id="@+id/regist"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="注册" />
+            </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/openMem"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="咪咕特会开通" />
+
+                <Button
+                    android:id="@+id/openRingback"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="开通彩铃 " />
+            </LinearLayout>
+
+            <!--
+            LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/buyRingBackByOpenMember"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="非特级会员一键订购彩铃" />
+
+                <Button
+                    android:id="@+id/buyRingBackByOpenRingBack"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="非彩铃用户一键订购彩铃" />
+            </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/buyRingback"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="订购彩铃" />
+
+                <Button
+                    android:id="@+id/giveRingback"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="赠送彩铃" />
+            </LinearLayout>
+
+            <!--
+            LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center" >
+
+                    <Button
+                    android:id="@+id/openRingbackByC"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="开通彩铃（无界面） " />
+            
+        </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/deletesong"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="删除铃音" />
+
+                <Button
+                    android:id="@+id/crbtAskfor"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="彩铃索要接口" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/ownRingback"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="个性化彩铃" />
+
+                <Button
+                    android:id="@+id/own_ring_month"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="个性化彩铃包月" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/key_order_own_ring_month"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:text="非彩铃用户一键订购个性化彩铃包月" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/vRing"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="振铃下载" />
+
+                <Button
+                    android:id="@+id/giveVibrateRingByNet"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="赠送振铃" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/fullsong"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="全曲下载" />
+
+                <Button
+                    android:id="@+id/giveFullSongByNet"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="赠送全曲" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/cp"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="CP专属包月类" />
+
+                <Button
+                    android:id="@+id/exclusive_net"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="专属按次订购" />
+            </LinearLayout>
+
+            <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+               
+               <Button
+                    android:id="@+id/payment"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="第三方支付系列接口" />
+
+               <Button
+                    android:id="@+id/mvDownload"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="MV类" />
+              
+            </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/sr_associate_song_recommend"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="关联歌曲推荐"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/sr_associate_singer_song_recommend"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="关联歌手歌曲推荐"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/sr_like_song_recommend"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="偏好歌曲推荐"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/sr_deal_song_recommend"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="基于用户的协同过滤推荐"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/crbtOpenCheck"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="查询开通彩铃" />
+
+                <Button
+                    android:id="@+id/digitalAlbum"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="数字专辑类" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/musicQuery"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="歌曲查询类" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/onlineLse"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="获取在线听歌地址" />
+
+                <Button
+                    android:id="@+id/crbtPrelisten"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="获取彩铃试听地址" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/crbtBox"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="查询个人铃音库" />
+
+                <Button
+                    android:id="@+id/setDefaultCrbt"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="设置默认铃音" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/getDefaultCrbt"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="手机号查询默认铃音" />
+
+                <Button
+                    android:id="@+id/ringPrelisten"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="振铃试听地址" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/noUI"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="无界面接口" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/get_log"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="查看日志" />
+
+                <Button
+                    android:id="@+id/clean_log"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="清除日志" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/logText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
