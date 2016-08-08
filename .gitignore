@@ -1,1 +1,8 @@
 /build
+/.idea/
+/gradlew
+/import-summary.txt
+/local.properties
+/gradle/
+/.gradle/
+/gradlew.bat
